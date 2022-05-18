@@ -89,6 +89,12 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "configurations": {
+            "test": {
+              "sourceMap": false,
+              "codeCoverage": true,
+              "browsers": "ChromeHeadless",
+              "watch": false
+            },
             "production": {
               "sourceMap": false,
               "codeCoverage": true,
